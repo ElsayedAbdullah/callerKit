@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallerKit API</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg" aria-label="navbar">
+        <div class="container position-relative">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="imgs/logo-text.svg"
+              class="d-block img-fluid"
+              alt="CallerKit API Logo"
+              width="163"
+              height="38"
+            />
+            <!-- <span class="ms-2 fw-bold">CallerKit API</span> -->
+          </a>
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+          <div class="overlay-menu" id="navbar">
+            <ul class="navbar-nav me-lg-auto pb-4 pb-lg-0">
+              <li>
+                <a href="#home" class="nav-link fw-semibold px-2">Home</a>
+              </li>
+              <li>
+                <a href="#how-it-works" class="nav-link fw-semibold px-2"
+                  >How it works</a
+                >
+              </li>
+              <li>
+                <a href="#features" class="nav-link fw-semibold px-2"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="nav-link fw-semibold px-2">Pricing</a>
+              </li>
+              <li>
+                <a href="#faqs" class="nav-link fw-semibold px-2">FAQs</a>
+              </li>
+            </ul>
+
+            <div
+              class="text-lg-end navbar-btns d-flex p-3 p-lg-0 gap-2 flex-column-reverse flex-lg-row"
+            >
+              <button
+                type="button"
+                class="text-gray login-btn btn fw-semibold btn-second"
+              >
+                Log in
+              </button>
+              <button type="button" class="btn btn-violet border fw-semibold">
+                Get Started Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero-section py-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-xl-5">
+              <div
+                class="d-inline-flex mb-3 mb-lg-4 align-items-center gap-2 phone-numbers"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <circle
+                    cx="8"
+                    cy="8"
+                    r="6"
+                    fill="#9E77ED"
+                    stroke="#F4EBFF"
+                    stroke-width="4"
+                  />
+                </svg>
+                <p class="mb-0">3+ Billion phone numbers</p>
+              </div>
+              <h1 class="mb-3 mb-lg-4">
+                Unlock the Power of Contact Intelligence
+              </h1>
+              <p class="lead mb-4 mb-lg-5 pe-lg-5">
+                Access a database of over 3 Billion phone numbers with verified
+                contact names and aliases through a simple API. Perfect for
+                developers, CRMs, verification systems, and more.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn btn-violet fw-semibold me-md-1"
+                >
+                  Get Started Now
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-second fw-semibold d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 17L22 12L17 7M7 7L2 12L7 17M14 3L10 21"
+                      stroke="#414651"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span class="ms-2">View API Docs</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-7">
+              <div class="image mt-5 mt-lg-0">
+                <picture>
+                  <!-- Show this image on screens 768px and up -->
+                  <source
+                    class="d-block mx-lg-auto img-fluid"
+                    alt="man looking at a screen"
+                    height="654"
+                    width="746"
+                    loading="lazy"
+                    srcset="imgs/hero-image.png"
+                    media="(min-width: 768px)"
+                  />
+
+                  <!-- Fallback for smaller screens -->
+                  <img
+                    src="imgs/hero-image-mobile.png"
+                    class="d-block mx-lg-auto img-fluid"
+                    alt="man looking at a screen"
+                    height="484"
+                    width="516"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section id="how-it-works" class="bg-gray text-center py-6">
+        <div class="container">
+          <div class="title">
+            <h2 class="text-violet fs-6 fw-semibold">How It Works</h2>
+            <p class="sub-title mb-0 mb-lg-3">Simple. Fast. Scalable.</p>
+          </div>
+          <div class="row pt-5 row-cols-1 row-cols-lg-3 g-4">
+            <div class="feature col">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center mb-3"
+              >
+                <svg
+                  class="flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 17.5H12.01M8.2 22H15.8C16.9201 22 17.4802 22 17.908 21.782C18.2843 21.5903 18.5903 21.2843 18.782 20.908C19 20.4802 19 19.9201 19 18.8V5.2C19 4.07989 19 3.51984 18.782 3.09202C18.5903 2.71569 18.2843 2.40973 17.908 2.21799C17.4802 2 16.9201 2 15.8 2H8.2C7.0799 2 6.51984 2 6.09202 2.21799C5.71569 2.40973 5.40973 2.71569 5.21799 3.09202C5 3.51984 5 4.0799 5 5.2V18.8C5 19.9201 5 20.4802 5.21799 20.908C5.40973 21.2843 5.71569 21.5903 6.09202 21.782C6.51984 22 7.07989 22 8.2 22ZM12.5 17.5C12.5 17.7761 12.2761 18 12 18C11.7239 18 11.5 17.7761 11.5 17.5C11.5 17.2239 11.7239 17 12 17C12.2761 17 12.5 17.2239 12.5 17.5Z"
+                    stroke="#7F56D9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="fs-5 fw-semibold">1. Search a Phone Number</h3>
+              <p>
+                Send a phone number via our API and get the associated contact
+                name(s) instantly.
+              </p>
+            </div>
+            <div class="feature col">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center mb-3"
+              >
+                <svg
+                  class="flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.00002 21.8174C4.6026 22 5.41649 22 6.8 22H17.2C18.5835 22 19.3974 22 20 21.8174M4.00002 21.8174C3.87082 21.7783 3.75133 21.7308 3.63803 21.673C3.07354 21.3854 2.6146 20.9265 2.32698 20.362C2 19.7202 2 18.8802 2 17.2V6.8C2 5.11984 2 4.27976 2.32698 3.63803C2.6146 3.07354 3.07354 2.6146 3.63803 2.32698C4.27976 2 5.11984 2 6.8 2H17.2C18.8802 2 19.7202 2 20.362 2.32698C20.9265 2.6146 21.3854 3.07354 21.673 3.63803C22 4.27976 22 5.11984 22 6.8V17.2C22 18.8802 22 19.7202 21.673 20.362C21.3854 20.9265 20.9265 21.3854 20.362 21.673C20.2487 21.7308 20.1292 21.7783 20 21.8174M4.00002 21.8174C4.00035 21.0081 4.00521 20.5799 4.07686 20.2196C4.39249 18.6329 5.63288 17.3925 7.21964 17.0769C7.60603 17 8.07069 17 9 17H15C15.9293 17 16.394 17 16.7804 17.0769C18.3671 17.3925 19.6075 18.6329 19.9231 20.2196C19.9948 20.5799 19.9996 21.0081 20 21.8174M16 9.5C16 11.7091 14.2091 13.5 12 13.5C9.79086 13.5 8 11.7091 8 9.5C8 7.29086 9.79086 5.5 12 5.5C14.2091 5.5 16 7.29086 16 9.5Z"
+                    stroke="#7F56D9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="fs-5 fw-semibold">2. Get Enriched Data</h3>
+              <p>
+                Receive structured data including name, aliases, and optional
+                meta fields (based on plan).
+              </p>
+            </div>
+            <div class="feature col">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center mb-3"
+              >
+                <svg
+                  class="flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.5 7.27771L12 11.9999M12 11.9999L3.49997 7.27771M12 11.9999L12 21.5M14 20.8889L12.777 21.5683C12.4934 21.7258 12.3516 21.8046 12.2015 21.8355C12.0685 21.8628 11.9315 21.8628 11.7986 21.8355C11.6484 21.8046 11.5066 21.7258 11.223 21.5683L3.82297 17.4572C3.52346 17.2908 3.37368 17.2076 3.26463 17.0892C3.16816 16.9845 3.09515 16.8605 3.05048 16.7253C3 16.5725 3 16.4012 3 16.0585V7.94141C3 7.59877 3 7.42744 3.05048 7.27465C3.09515 7.13947 3.16816 7.01539 3.26463 6.9107C3.37368 6.79236 3.52345 6.70916 3.82297 6.54276L11.223 2.43165C11.5066 2.27409 11.6484 2.19531 11.7986 2.16442C11.9315 2.13709 12.0685 2.13709 12.2015 2.16442C12.3516 2.19531 12.4934 2.27409 12.777 2.43164L20.177 6.54276C20.4766 6.70916 20.6263 6.79236 20.7354 6.9107C20.8318 7.01539 20.9049 7.13947 20.9495 7.27464C21 7.42744 21 7.59876 21 7.94141L21 12.5M7.5 4.49996L16.5 9.49996M19 21V15M16 18H22"
+                    stroke="#7F56D9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="fs-5 fw-semibold">3. Integrate at Scale</h3>
+              <p>
+                Use our robust, rate-limited API in CRMs, lead enrichment tools,
+                or call verification apps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="py-6">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5">
+            <div
+              class="col col-lg-4 d-flex flex-column align-items-start gap-2"
+            >
+              <div class="feature-icon feature-icon-large mb-4">
+                <svg
+                  class="flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <path
+                    d="M8.74999 5.25004C8.74999 3.63921 10.0558 2.33337 11.6667 2.33337C13.2775 2.33337 14.5833 3.63921 14.5833 5.25004V7.00004H15.75C17.3808 7.00004 18.1962 7.00004 18.8394 7.26646C19.697 7.62169 20.3783 8.30305 20.7336 9.16065C21 9.80385 21 10.6192 21 12.25H22.75C24.3608 12.25 25.6667 13.5559 25.6667 15.1667C25.6667 16.7775 24.3608 18.0834 22.75 18.0834H21V20.0667C21 22.0269 21 23.007 20.6185 23.7557C20.283 24.4142 19.7475 24.9497 19.089 25.2852C18.3403 25.6667 17.3602 25.6667 15.4 25.6667H14.5833V23.625C14.5833 22.1753 13.4081 21 11.9583 21C10.5086 21 9.33333 22.1753 9.33333 23.625V25.6667H7.93333C5.97314 25.6667 4.99305 25.6667 4.24436 25.2852C3.58579 24.9497 3.05036 24.4142 2.71481 23.7557C2.33333 23.007 2.33333 22.0269 2.33333 20.0667V18.0834H4.08333C5.69416 18.0834 6.99999 16.7775 6.99999 15.1667C6.99999 13.5559 5.69416 12.25 4.08333 12.25H2.33333C2.33333 10.6192 2.33333 9.80385 2.59975 9.16065C2.95498 8.30305 3.63634 7.62169 4.49394 7.26646C5.13714 7.00004 5.95253 7.00004 7.58333 7.00004H8.74999V5.25004Z"
+                    stroke="#7F56D9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h2 class="sub-title">Key Features</h2>
+              <p class="text-gray fs-5">
+                Get your hands on over 3 billion phone numbers with verified
+                contact names and aliases
+              </p>
+            </div>
+            <div class="col col-lg-8">
+              <div class="row row-cols-1 row-cols-sm-2 gx-5 gy-4">
+                <div class="col d-flex flex-column gap-2">
+                  <h5 class="fw-semibold mb-0 text-body-emphasis">
+                    Lighting Fast lookup
+                  </h5>
+                  <p class="text-gray">
+                    Results returned in milliseconds, built for real time apps.
+                  </p>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <h5 class="fw-semibold mb-0 text-body-emphasis">
+                    Bulk API Support
+                  </h5>
+                  <p class="text-gray">
+                    Upload and verify thousands of numbers in a single request.
+                  </p>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <h5 class="fw-semibold mb-0 text-body-emphasis">
+                    Alias Matching
+                  </h5>
+                  <p class="text-gray">
+                    Access multiple known names for one phone number.
+                  </p>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <h5 class="fw-semibold mb-0 text-body-emphasis">
+                    Dashboard & Analytics
+                  </h5>
+                  <p class="text-gray">
+                    Monitor your usage and plan details easily.
+                  </p>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <h5 class="fw-semibold mb-0 text-body-emphasis">
+                    Secure & Reliable
+                  </h5>
+                  <p class="text-gray">
+                    Encrypted data, rate limits, and 99.9% uptime SLA
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- use cases -->
+      <section class="use-cases bg-gray py-6">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-5">
+            <div class="col d-flex flex-column align-items-start gap-2">
+              <h2 class="text-violet fs-6 fw-semibold">Use Cases</h2>
+              <p class="sub-title">How you can use CallerKit API?</p>
+              <p class="text-gray fs-5 pe-lg-5 me-lg-4">
+                Powerful, self-serve product and growth analytics to help you
+                convert, engage, and retain more users. Trusted by over 4,000
+                startups.
+              </p>
+            </div>
+            <div class="col">
+              <div class="row row-cols-1 g-4">
+                <div class="col d-flex flex-column gap-2">
+                  <div class="feature d-flex align-items-start gap-3">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.09436 11.2288C6.03221 10.8282 5.99996 10.4179 5.99996 10C5.99996 5.58172 9.60525 2 14.0526 2C18.4999 2 22.1052 5.58172 22.1052 10C22.1052 10.9981 21.9213 11.9535 21.5852 12.8345C21.5154 13.0175 21.4804 13.109 21.4646 13.1804C21.4489 13.2512 21.4428 13.301 21.4411 13.3735C21.4394 13.4466 21.4493 13.5272 21.4692 13.6883L21.8717 16.9585C21.9153 17.3125 21.9371 17.4895 21.8782 17.6182C21.8266 17.731 21.735 17.8205 21.6211 17.8695C21.4911 17.9254 21.3146 17.8995 20.9617 17.8478L17.7765 17.3809C17.6101 17.3565 17.527 17.3443 17.4512 17.3448C17.3763 17.3452 17.3245 17.3507 17.2511 17.3661C17.177 17.3817 17.0823 17.4172 16.893 17.4881C16.0097 17.819 15.0524 18 14.0526 18C13.6344 18 13.2237 17.9683 12.8227 17.9073M7.63158 22C10.5965 22 13 19.5376 13 16.5C13 13.4624 10.5965 11 7.63158 11C4.66668 11 2.26316 13.4624 2.26316 16.5C2.26316 17.1106 2.36028 17.6979 2.53955 18.2467C2.61533 18.4787 2.65322 18.5947 2.66566 18.6739C2.67864 18.7567 2.68091 18.8031 2.67608 18.8867C2.67145 18.9668 2.65141 19.0573 2.61134 19.2383L2 22L4.9948 21.591C5.15827 21.5687 5.24 21.5575 5.31137 21.558C5.38652 21.5585 5.42641 21.5626 5.50011 21.5773C5.5701 21.5912 5.67416 21.6279 5.88227 21.7014C6.43059 21.8949 7.01911 22 7.63158 22Z"
+                          stroke="#414651"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="feature-text">
+                      <h5 class="mb-1 mb-lg-2 fw-semibold">CRM Enrichment</h5>
+                      <p class="text-gray">
+                        Add names and aliases to raw number lists
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <div class="feature d-flex align-items-start gap-3">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.3163 19.4384C5.92462 18.0052 7.34492 17 9 17H15C16.6551 17 18.0754 18.0052 18.6837 19.4384M16 9.5C16 11.7091 14.2091 13.5 12 13.5C9.79086 13.5 8 11.7091 8 9.5C8 7.29086 9.79086 5.5 12 5.5C14.2091 5.5 16 7.29086 16 9.5ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#414651"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="feature-text">
+                      <h5 class="mb-1 mb-lg-2 fw-semibold">
+                        Caller ID & Dialer Apps
+                      </h5>
+                      <p>Display relevant contact info to end users</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <div class="feature d-flex align-items-start gap-3">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M6 15L8 17L12.5 12.5M8 8V5.2C8 4.0799 8 3.51984 8.21799 3.09202C8.40973 2.71569 8.71569 2.40973 9.09202 2.21799C9.51984 2 10.0799 2 11.2 2H18.8C19.9201 2 20.4802 2 20.908 2.21799C21.2843 2.40973 21.5903 2.71569 21.782 3.09202C22 3.51984 22 4.0799 22 5.2V12.8C22 13.9201 22 14.4802 21.782 14.908C21.5903 15.2843 21.2843 15.5903 20.908 15.782C20.4802 16 19.9201 16 18.8 16H16M5.2 22H12.8C13.9201 22 14.4802 22 14.908 21.782C15.2843 21.5903 15.5903 21.2843 15.782 20.908C16 20.4802 16 19.9201 16 18.8V11.2C16 10.0799 16 9.51984 15.782 9.09202C15.5903 8.71569 15.2843 8.40973 14.908 8.21799C14.4802 8 13.9201 8 12.8 8H5.2C4.0799 8 3.51984 8 3.09202 8.21799C2.71569 8.40973 2.40973 8.71569 2.21799 9.09202C2 9.51984 2 10.0799 2 11.2V18.8C2 19.9201 2 20.4802 2.21799 20.908C2.40973 21.2843 2.71569 21.5903 3.09202 21.782C3.51984 22 4.07989 22 5.2 22Z"
+                          stroke="#414651"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="feature-text">
+                      <h5 class="mb-1 mb-lg-2 fw-semibold">Lead Validation</h5>
+                      <p>Clean up leads with accurate names for outreach</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <div class="feature d-flex align-items-start gap-3">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 11.5001L11 13.5001L15.5 9.00011M20 12.0001C20 16.9086 14.646 20.4785 12.698 21.615C12.4766 21.7442 12.3659 21.8087 12.2097 21.8422C12.0884 21.8682 11.9116 21.8682 11.7903 21.8422C11.6341 21.8087 11.5234 21.7442 11.302 21.615C9.35396 20.4785 4 16.9086 4 12.0001V7.21772C4 6.4182 4 6.01845 4.13076 5.67482C4.24627 5.37126 4.43398 5.10039 4.67766 4.88564C4.9535 4.64255 5.3278 4.50219 6.0764 4.22146L11.4382 2.21079C11.6461 2.13283 11.75 2.09385 11.857 2.07839C11.9518 2.06469 12.0482 2.06469 12.143 2.07839C12.25 2.09385 12.3539 2.13283 12.5618 2.21079L17.9236 4.22146C18.6722 4.50219 19.0465 4.64255 19.3223 4.88564C19.566 5.10039 19.7537 5.37126 19.8692 5.67482C20 6.01845 20 6.4182 20 7.21772V12.0001Z"
+                          stroke="#414651"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="feature-text">
+                      <h5 class="mb-1 mb-lg-2 fw-semibold">Fraud Prevention</h5>
+                      <p>Match name with number during verification</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column gap-2">
+                  <div class="feature d-flex align-items-start gap-3">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 11H4.6C4.03995 11 3.75992 11 3.54601 11.109C3.35785 11.2049 3.20487 11.3578 3.10899 11.546C3 11.7599 3 12.0399 3 12.6V21M16.5 11H19.4C19.9601 11 20.2401 11 20.454 11.109C20.6422 11.2049 20.7951 11.3578 20.891 11.546C21 11.7599 21 12.0399 21 12.6V21M16.5 21V6.2C16.5 5.0799 16.5 4.51984 16.282 4.09202C16.0903 3.71569 15.7843 3.40973 15.408 3.21799C14.9802 3 14.4201 3 13.3 3H10.7C9.57989 3 9.01984 3 8.59202 3.21799C8.21569 3.40973 7.90973 3.71569 7.71799 4.09202C7.5 4.51984 7.5 5.0799 7.5 6.2V21M22 21H2M11 7H13M11 11H13M11 15H13"
+                          stroke="#414651"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="feature-text">
+                      <h5 class="mb-1 mb-lg-2 fw-semibold">B2B Tools</h5>
+                      <p>Power your SaaS apps with enriched contact data</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image mt-5">
+            <picture>
+              <!-- Show this image on screens 768px and up -->
+              <source
+                class="d-block mx-lg-auto img-fluid"
+                alt="man looking at a screen"
+                height="516"
+                width="1216"
+                loading="lazy"
+                srcset="imgs/use-cases.png"
+                media="(min-width: 768px)"
+              />
+
+              <!-- Fallback for smaller screens -->
+              <img
+                src="imgs/use-cases-mobile.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt="man looking at a screen"
+                height="418"
+                width="516"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="pricing py-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 m-auto">
+              <div class="text-center mb-5">
+                <h2 class="text-violet fs-6 fw-semibold">Pricing</h2>
+                <p class="sub-title">Plans that fit your scale</p>
+                <p class="fs-5">
+                  Choose a plan that fits your development and scaling needs.
+                  Start for free and upgrade anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-3">
+            <div class="col-lg-4">
+              <div class="card card-pricing">
+                <div class="card-header text-gray bg-transparent">
+                  <p class="fw-semibold plan-type">Dev Mode</p>
+                  <div class="h1 fw-bold">
+                    <span class="price-info text-gray-900">
+                      $<span class="price font-weight-bolder">0</span>
+                    </span>
+                    <span class="fw-medium fs-6">per month</span>
+                  </div>
+                  <p>Ideal for development and integration testing</p>
+                  <a href="#" class="btn btn-violet d-block">Get Started</a>
+                </div>
+                <div class="card-body text-gray">
+                  <ul class="d-flex flex-column g-3 list-unstyled mb-0">
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>10 real requests</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Unlimited mock responses to simulate real payloads</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-pricing">
+                <div class="card-header text-gray bg-transparent">
+                  <p
+                    class="fw-semibold plan-type d-flex align-items-center justify-content-between"
+                  >
+                    Pro <span class="badge rounded-pill">Popular</span>
+                  </p>
+                  <div class="h1 fw-bold">
+                    <span class="price-info text-gray-900">
+                      $<span class="price font-weight-bolder">119</span>
+                    </span>
+                    <span class="fw-medium fs-6">per month</span>
+                  </div>
+                  <p>Ideal for production <br />environments</p>
+                  <a href="#" class="btn btn-violet d-block">Get Started</a>
+                </div>
+                <div class="card-body text-gray">
+                  <ul class="d-flex flex-column g-3 list-unstyled mb-0">
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>100,000 real requests</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Unlimited mock responses to simulate real payloads</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Full access to real-time name and alias data</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Priority rate-limiting and enhanced reliability</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>
+                        Access to phone metadata (e.g., carrier, spam count)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-pricing">
+                <div class="card-header text-gray bg-transparent">
+                  <p class="fw-semibold plan-type">Enterprise</p>
+                  <div class="h1 fw-bold">
+                    <span class="price-info text-gray-900">
+                      <span class="price font-weight-bolder">Custom</span>
+                    </span>
+                  </div>
+                  <p>Designed for high-volume, enterprise-grade applications</p>
+                  <a href="#" class="btn btn-violet d-block">Contact Us</a>
+                </div>
+                <div class="card-body text-gray">
+                  <ul class="d-flex flex-column g-3 list-unstyled mb-0">
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Everything in <strong>Pro</strong> Plan</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Dedicated support team</p>
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <svg
+                        class="flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#7F56D9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>Custom integrations and onboarding assistance</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- API -->
+      <section class="api py-6 bg-gray">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="content">
+                <h2 class="mb-4">Developer-Focused API</h2>
+                <p class="mb-4 fs-5">
+                  Built for Developers. Loved by Businesses.
+                </p>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li class="d-flex gap-3 align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.75 14.0002L12.25 17.5002L19.25 10.5002M25.6667 14.0002C25.6667 20.4435 20.4433 25.6668 14 25.6668C7.55668 25.6668 2.33334 20.4435 2.33334 14.0002C2.33334 7.55684 7.55668 2.3335 14 2.3335C20.4433 2.3335 25.6667 7.55684 25.6667 14.0002Z"
+                        stroke="#7F56D9"
+                        stroke-width="2.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="mb-0">REST API with detailed documentation</p>
+                  </li>
+                  <li class="d-flex gap-3 align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.75 14.0002L12.25 17.5002L19.25 10.5002M25.6667 14.0002C25.6667 20.4435 20.4433 25.6668 14 25.6668C7.55668 25.6668 2.33334 20.4435 2.33334 14.0002C2.33334 7.55684 7.55668 2.3335 14 2.3335C20.4433 2.3335 25.6667 7.55684 25.6667 14.0002Z"
+                        stroke="#7F56D9"
+                        stroke-width="2.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="mb-0">JSON responses, rate-limited endpoints</p>
+                  </li>
+                  <li class="d-flex gap-3 align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.75 14.0002L12.25 17.5002L19.25 10.5002M25.6667 14.0002C25.6667 20.4435 20.4433 25.6668 14 25.6668C7.55668 25.6668 2.33334 20.4435 2.33334 14.0002C2.33334 7.55684 7.55668 2.3335 14 2.3335C20.4433 2.3335 25.6667 7.55684 25.6667 14.0002Z"
+                        stroke="#7F56D9"
+                        stroke-width="2.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="mb-0">
+                      Sample code in Python, Node.js, Swift, etc
+                    </p>
+                  </li>
+                </ul>
+                <div
+                  class="d-flex flex-column-reverse flex-md-row gap-2 d-md-flex justify-content-md-start btns mt-4 mt-lg-5"
+                >
+                  <a href="#" class="btn btn-second border">View API Docs</a>
+                  <a href="#" class="btn btn-violet">Get Your API Key</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="image mt-5 mt-lg-0">
+                <img
+                  src="imgs/code.png"
+                  width="458"
+                  height="486"
+                  alt="api code callerKit API"
+                  class="img-fluid d-block"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Security -->
+      <section class="security py-6">
+        <div class="container">
+          <h2 class="sub-title">Security & Compliance</h2>
+          <p class="fs-5">We prioritize data security and privacy.</p>
+          <div class="row g-4 pt-4 pt-lg-5 row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="feature d-flex flex-column">
+                <div
+                  class="security-icon d-inline-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.2 21C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27977 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3L7.8 3C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8L3 16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H16.2Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.7316 13.1947C13.661 12.9831 13.6257 12.8772 13.6276 12.7907C13.6295 12.6996 13.6417 12.6519 13.6836 12.5711C13.7235 12.4942 13.83 12.395 14.0432 12.1967C14.6318 11.6489 15 10.8675 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 10.8675 9.36818 11.649 9.95681 12.1967C10.17 12.395 10.2765 12.4942 10.3164 12.5711C10.3583 12.6519 10.3705 12.6996 10.3724 12.7907C10.3743 12.8772 10.339 12.9831 10.2684 13.1947L9.35099 15.947C9.23249 16.3025 9.17324 16.4803 9.20877 16.6218C9.23987 16.7456 9.31718 16.8529 9.42484 16.9216C9.54783 17 9.7352 17 10.1099 17H13.8901C14.2648 17 14.4522 17 14.5752 16.9216C14.6828 16.8529 14.7601 16.7456 14.7912 16.6218C14.8268 16.4803 14.7675 16.3025 14.649 15.947L13.7316 13.1947Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h5 class="fw-semibold">
+                  Encrypted data transmissions with ease
+                </h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="feature d-flex flex-column col">
+                <div
+                  class="security-icon d-inline-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.3334 17L17.3334 14L14.3334 11M10.3334 7L7.33337 10L10.3334 13M8.13337 21H16.5334C18.2135 21 19.0536 21 19.6953 20.673C20.2598 20.3854 20.7188 19.9265 21.0064 19.362C21.3334 18.7202 21.3334 17.8802 21.3334 16.2V7.8C21.3334 6.11984 21.3334 5.27976 21.0064 4.63803C20.7188 4.07354 20.2598 3.6146 19.6953 3.32698C19.0536 3 18.2135 3 16.5334 3H8.13337C6.45322 3 5.61314 3 4.9714 3.32698C4.40692 3.6146 3.94797 4.07354 3.66035 4.63803C3.33337 5.27976 3.33337 6.11984 3.33337 7.8V16.2C3.33337 17.8802 3.33337 18.7202 3.66035 19.362C3.94797 19.9265 4.40692 20.3854 4.9714 20.673C5.61314 21 6.45322 21 8.13337 21Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h5 class="fw-semibold">
+                  API key protection and request logging
+                </h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="feature d-flex flex-column col">
+                <div
+                  class="security-icon d-inline-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.7171 9H6.16663C4.78591 9 3.66663 7.88071 3.66663 6.5C3.66663 5.11929 4.78591 4 6.16663 4H15.7171M9.61612 20H19.1666C20.5473 20 21.6666 18.8807 21.6666 17.5C21.6666 16.1193 20.5473 15 19.1666 15H9.61612M3.66663 17.5C3.66663 19.433 5.23363 21 7.16663 21C9.09962 21 10.6666 19.433 10.6666 17.5C10.6666 15.567 9.09962 14 7.16663 14C5.23363 14 3.66663 15.567 3.66663 17.5ZM21.6666 6.5C21.6666 8.433 20.0996 10 18.1666 10C16.2336 10 14.6666 8.433 14.6666 6.5C14.6666 4.567 16.2336 3 18.1666 3C20.0996 3 21.6666 4.567 21.6666 6.5Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h5 class="fw-semibold">
+                  IP restrictions and usage-based limits
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQS -->
+      <section id="faqs" class="faqs py-6">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="sub-title text-gray-900 mb-3">
+              Frequently asked questions
+            </h2>
+            <p class="fs-5">
+              Everything you need to know about the product and billing.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 m-auto">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <span
+                      class="accordion-button fw-medium"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      What does your API do?
+                    </span>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body pe-lg-5 pe-3 pt-0 text-gray">
+                      Our API provides names and known aliases associated with a
+                      given phone number. It helps identify unknown callers and
+                      enrich contact data.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <span
+                      class="accordion-button fw-medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Which countries are supported?
+                    </span>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body pe-lg-5 pe-3 pt-0 text-gray">
+                      All countries are supported via international dialing
+                      codes (E.164 format).
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <span
+                      class="accordion-button fw-medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      What kind of data can I get?
+                    </span>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body pe-lg-5 pe-3 pt-0 text-gray">
+                      <ul>
+                        <li>Primary name</li>
+                        <li>Aliases with confidence scores</li>
+                        <li>Spam count</li>
+                        <li>Emails (if available)</li>
+                        <li>Social media profiles (if available)</li>
+                        <li>Carrier and country info</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <span
+                      class="accordion-button fw-medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      Is this data real-time?
+                    </span>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body pe-lg-5 pe-3 pt-0 text-gray">
+                      The data is cached for performance and refreshed regularly
+                      for accuracy.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <span
+                      class="accordion-button fw-medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      Can I look up multiple numbers at once?
+                    </span>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body pe-lg-5 pe-3 pt-0 text-gray">
+                      Yes, send an array of phone numbers in the request.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <span
+                      class="accordion-button fw-medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
+                      What authentication is required?
+                    </span>
+                  </h2>
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body pe-lg-5 pe-3 pt-0 text-gray">
+                      Each request must include your API key in the
+                      `Authorization` header.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Get in touch -->
+          <div class="get-in-touch-box mt-5 text-center">
+            <div>
+              <div class="text-center">
+                <img
+                  class="d-md-none d-inline-block img-fluid mb-3"
+                  src="imgs/avatar.png"
+                  alt="avatar"
+                />
+              </div>
+              <h5 class="fw-semibold text-gray-900">Still have questions?</h5>
+              <p class="mb-0">
+                Can’t find the answer you’re looking for? Please chat to our
+                friendly team.
+              </p>
+            </div>
+            <a href="#" class="btn btn-violet">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="pb-5">
+        <div class="container">
+          <div
+            class="footer-top d-flex gap-4 flex-column border-top border-bottom py-5"
+          >
+            <div class="logo text-md-center">
+              <img
+                width="160"
+                height="32"
+                loading="lazy"
+                src="/imgs/logo-text.svg"
+                alt="callerKit API Logo"
+              />
+            </div>
+            <ul class="nav justify-content-md-center">
+              <li>
+                <a href="#home" class="nav-link fw-semibold px-2">Home</a>
+              </li>
+              <li>
+                <a href="#how-it-works" class="nav-link fw-semibold px-2"
+                  >How it works</a
+                >
+              </li>
+              <li>
+                <a href="#features" class="nav-link fw-semibold px-2"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="nav-link fw-semibold px-2">Pricing</a>
+              </li>
+              <li>
+                <a href="#faqs" class="nav-link fw-semibold px-2">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="footer-bottom flex-column-reverse flex-md-row d-flex justify-content-md-between align-items-start gap-3 align-items-md-center mt-4"
+          >
+            <div class="col-md-6 d-flex align-items-center">
+              <p class="mb-3 mb-md-0 text-body-secondary">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                CallerKit API. All rights reserved.
+              </p>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li>
+                <a class="text-decoration-none" href="#">Terms</a>
+              </li>
+              <li class="ms-3">
+                <a class="text-decoration-none" href="#">Privacy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

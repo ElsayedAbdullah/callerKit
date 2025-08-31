@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/inter-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/inter-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/inter-semiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/inter-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global STYLES */
+:root {
+  --gray-600: #535862;
+  --gray-500: #717680;
+  --gray-900: #181d27;
+  --brand-600: #7f56d9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--gray-900);
+  font-weight: 500;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--gray-600);
+}
+
+.btn-violet {
+  background-color: #7f56d9;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 0 1px rgba(10, 13, 18, 0.18) inset,
+    0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.btn-violet:hover {
+  background-color: #6c49b8;
+  color: white;
+}
+
+.btn-violet:focus {
+  box-shadow: 0 0 0 1px rgba(10, 13, 18, 0.18) inset,
+    0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(10, 13, 18, 0.05),
+    0 0 0 2px #fff, 0 0 0 4px #9e77ed;
+  background-color: #7f56d9 !important;
+  color: #fff !important;
+}
+.btn-second {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid #d5d7da;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(10, 13, 18, 0.18) inset,
+    0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.btn-second:hover {
+  background: #fafafa;
+}
+
+.btn-second:active,
+.btn-violet:active .btn-second:focus,
+.btn-second:hover {
+  outline: none;
+  border-color: #d5d7da !important;
+}
+
+.btn-second:focus {
+  box-shadow: 0 0 0 1px rgba(10, 13, 18, 0.18) inset,
+    0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(10, 13, 18, 0.05),
+    0 0 0 2px #fff, 0 0 0 4px #9e77ed;
+}
+
+header {
+  border-bottom: 1px solid #e9eaeb;
+}
+
+.dropdown .link-body-emphasis.show {
+  background: lightgray;
+
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #9e77ed;
+}
+
+.dropdown-item.logout:hover {
+  background-color: #fef3f2;
+  color: #f04438 !important;
+}
+
+.dropdown-item.logout svg path,
+.dropdown-item.logout {
+  transition: 0.2s;
+}
+
+.dropdown-item.logout:hover svg path {
+  stroke: #f04438;
+}
+
+.welcome-top h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.welcome-top p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .welcome-top h2 {
+    font-size: 20px;
+  }
+}
+
+.dropdown {
+  border-radius: 8px;
+  border: 1px solid #e9eaeb;
+  background: #fff;
+  box-shadow: 0 12px 16px -4px rgba(10, 13, 18, 0.08),
+    0 4px 6px -2px rgba(10, 13, 18, 0.03), 0 2px 2px -1px rgba(10, 13, 18, 0.04);
+}
+
+.dropdown-item {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.dropdown-item:active {
+  background-color: #6c49b8;
+}
+
+.api-requests .box {
+  border-radius: 12px;
+
+  border: 1px solid #e9eaeb;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+}
+
+.api-requests .box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.api-requests .box p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.api-requests .progress-bar {
+  background-color: #7f56d9;
+  border-radius: 4px;
+}
+
+.request-info-box .icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #f4ebff;
+}
+
+.request-info p {
+  font-weight: 500;
+}
+
+.request-info p.end {
+  color: #6941c6;
+  font-weight: normal;
+}
+
+.request-info-box.danger .icon {
+  background-color: #fee4e2;
+}
+
+.request-info-box.danger .icon svg path {
+  stroke: #d92d20;
+}
+
+.request-info-box.danger p.end {
+  color: #d92d20;
+}
+
+.request-info-box.danger .progress-bar {
+  background-color: #d92d20;
+}
+
+.box-bottom input {
+  overflow: hidden;
+  color: #717680;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Inter";
+  transition: 0.2s;
+}
+
+.box-bottom input:hover {
+  color: #181d27;
+}
+
+.box-bottom input:focus {
+  border: 0;
+  outline: none;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header .icon {
+  border-radius: 28px;
+  border: 8px solid #fafafa;
+  background: #f5f5f5;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.modal-body h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.modal-body p {
+  color: #535862;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#copyBtn.copied {
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: #17b26a;
+  box-shadow: 0 0 0 1px rgba(10, 13, 18, 0.18) inset,
+    0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+#toggleBtn,
+#copyBtn {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.upgrade-plan {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-close {
+  padding: 14px !important;
+  transition: 0.2s;
+}
+.btn-close:hover {
+  background-color: #fafafa;
+}

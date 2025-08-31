@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="p-3">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+            <img
+              src="imgs/logo-text.svg"
+              class="d-block img-fluid"
+              alt="CallerKit API Logo"
+              width="163"
+              height="38"
+            />
+            <!-- <span class="ms-2 fw-bold">CallerKit API</span> -->
+          </a>
+          <div class="dropdown border-0 text-end">
+            <a
+              href="#"
+              class="d-block rounded-circle link-body-emphasis text-decoration-none"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="imgs/user-avatar.png"
+                alt="mdo"
+                width="40"
+                height="40"
+                class="rounded-circle user-avatar"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center gap-3"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.33329 7.33334H4.33329M5.66663 10H4.33329M9.66663 4.66667H4.33329M12.3333 4.53334V11.4667C12.3333 12.5868 12.3333 13.1468 12.1153 13.5747C11.9236 13.951 11.6176 14.2569 11.2413 14.4487C10.8134 14.6667 10.2534 14.6667 9.13329 14.6667H4.86663C3.74652 14.6667 3.18647 14.6667 2.75864 14.4487C2.38232 14.2569 2.07636 13.951 1.88461 13.5747C1.66663 13.1468 1.66663 12.5868 1.66663 11.4667V4.53334C1.66663 3.41323 1.66663 2.85318 1.88461 2.42535C2.07636 2.04903 2.38232 1.74307 2.75864 1.55132C3.18647 1.33334 3.74652 1.33334 4.86663 1.33334H9.13329C10.2534 1.33334 10.8134 1.33334 11.2413 1.55132C11.6176 1.74307 11.9236 2.04903 12.1153 2.42535C12.3333 2.85318 12.3333 3.41323 12.3333 4.53334Z"
+                      stroke="#717680"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  API docs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item logout d-flex align-items-center gap-3"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.66667 10.3333L13 7M13 7L9.66667 3.66667M13 7H5M5 1H4.2C3.0799 1 2.51984 1 2.09202 1.21799C1.7157 1.40973 1.40973 1.71569 1.21799 2.09202C1 2.51984 1 3.07989 1 4.2V9.8C1 10.9201 1 11.4802 1.21799 11.908C1.40973 12.2843 1.71569 12.5903 2.09202 12.782C2.51984 13 3.0799 13 4.2 13H5"
+                      stroke="#717680"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Welcome -->
+      <div class="welcome mb-4">
+        <div class="container">
+          <div
+            class="welcome-top pt-4 mt-2 mt-lg-0 pt-lg-5 d-flex flex-column flex-md-row gap-3 align-items-start align-items-md-center justify-content-between"
+          >
+            <h2 class="mb-0">Welcome back, Imran</h2>
+            <button
+              class="upgrade-plan btn btn-violet d-flex align-items-center justify-content-center gap-2"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8333 1.66667L3.41118 10.5732C3.12051 10.922 2.97517 11.0964 2.97295 11.2437C2.97102 11.3718 3.02808 11.4936 3.12768 11.5741C3.24226 11.6667 3.46928 11.6667 3.92333 11.6667H9.99997L9.16663 18.3333L16.5888 9.42679C16.8794 9.07799 17.0248 8.90358 17.027 8.75629C17.0289 8.62824 16.9719 8.50642 16.8723 8.42593C16.7577 8.33334 16.5307 8.33334 16.0766 8.33334H9.99997L10.8333 1.66667Z"
+                  stroke="white"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Upgrade Plan</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- API Requests -->
+      <div class="api-requests">
+        <div class="container">
+          <div class="box">
+            <div class="text p-3 p-lg-4">
+              <h3 class="mb-1 mb-lg-2">This month API requests</h3>
+              <p>You’re using 84% of available API requests</p>
+              <!-- added class danger to the div below when No requests left -->
+              <div
+                class="request-info-box d-flex align-items-center gap-3 py-3 py-lg-4"
+              >
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.6667 14.1667H3.33333M3.33333 14.1667L6.66666 10.8333M3.33333 14.1667L6.66666 17.5M3.33333 5.83333H16.6667M16.6667 5.83333L13.3333 2.5M16.6667 5.83333L13.3333 9.16667"
+                      stroke="#7F56D9"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-fill">
+                  <div
+                    class="request-info d-flex align-items-center justify-content-between"
+                  >
+                    <p class="start mb-2 fw-semibold">
+                      <span class="consumed">84,291</span> /
+                      <span class="total">100,000</span>
+                    </p>
+                    <p class="end mb-2">- 15,709 left</p>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Example 1px high"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 8px"
+                  >
+                    <div class="progress-bar" style="width: 84%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box-bottom d-flex justify-content-end p-3 px-lg-4 border-top"
+            >
+              <button
+                class="upgrade-plan ms-auto py-2 px-3 btn btn-second d-flex align-items-center justify-content-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M10.8333 1.66666L3.41118 10.5732C3.12051 10.922 2.97517 11.0964 2.97295 11.2437C2.97102 11.3718 3.02808 11.4936 3.12768 11.5741C3.24226 11.6667 3.46928 11.6667 3.92333 11.6667H9.99997L9.16663 18.3333L16.5888 9.42678C16.8794 9.07797 17.0248 8.90357 17.027 8.75627C17.0289 8.62823 16.9719 8.5064 16.8723 8.42591C16.7577 8.33332 16.5307 8.33332 16.0766 8.33332H9.99997L10.8333 1.66666Z"
+                    stroke="#414651"
+                    stroke-width="1.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Upgrade plan</span>
+              </button>
+            </div>
+          </div>
+          <div class="box my-4">
+            <h3 class="p-3 px-lg-4 mb-0">API Key</h3>
+            <div
+              class="box-bottom d-flex flex-column flex-md-row align-items-md-center gap-3 p-3 p-md-4 border-top"
+            >
+              <div class="d-flex flex-fill">
+                <input
+                  id="myInput"
+                  class="d-block w-100 border ps-4 p-2 rounded-2 rounded-end-0 border-end-0"
+                  type="text"
+                  value="cta_33871720855azUNF7RB6y4YQAoObdNVyvJhMuFZrwgeewU"
+                />
+                <button
+                  id="toggleBtn"
+                  class="d-flex border rounded-start-0 btn-second shadow-none btn flex-shrink-0 align-items-center justify-content-center gap-2 p-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M2.42012 12.7132C2.28394 12.4975 2.21584 12.3897 2.17772 12.2234C2.14909 12.0985 2.14909 11.9015 2.17772 11.7766C2.21584 11.6103 2.28394 11.5025 2.42012 11.2868C3.54553 9.50484 6.8954 5 12.0004 5C17.1054 5 20.4553 9.50484 21.5807 11.2868C21.7169 11.5025 21.785 11.6103 21.8231 11.7766C21.8517 11.9015 21.8517 12.0985 21.8231 12.2234C21.785 12.3897 21.7169 12.4975 21.5807 12.7132C20.4553 14.4952 17.1054 19 12.0004 19C6.8954 19 3.54553 14.4952 2.42012 12.7132Z"
+                      stroke="#414651"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.0004 15C13.6573 15 15.0004 13.6569 15.0004 12C15.0004 10.3431 13.6573 9 12.0004 9C10.3435 9 9.0004 10.3431 9.0004 12C9.0004 13.6569 10.3435 15 12.0004 15Z"
+                      stroke="#414651"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="d-none d-lg-inline-block">Hide API Key</span>
+                </button>
+              </div>
+              <button
+                id="copyBtn"
+                class="p-3 btn btn-violet d-flex align-items-center justify-content-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M4 14C3.06812 14 2.60218 14 2.23463 13.8478C1.74458 13.6448 1.35523 13.2554 1.15224 12.7654C1 12.3978 1 11.9319 1 11V4.2C1 3.0799 1 2.51984 1.21799 2.09202C1.40973 1.71569 1.71569 1.40973 2.09202 1.21799C2.51984 1 3.0799 1 4.2 1H11C11.9319 1 12.3978 1 12.7654 1.15224C13.2554 1.35523 13.6448 1.74458 13.8478 2.23463C14 2.60218 14 3.06812 14 4M11.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V11.2C21 10.0799 21 9.51984 20.782 9.09202C20.5903 8.71569 20.2843 8.40973 19.908 8.21799C19.4802 8 18.9201 8 17.8 8H11.2C10.0799 8 9.51984 8 9.09202 8.21799C8.71569 8.40973 8.40973 8.71569 8.21799 9.09202C8 9.51984 8 10.0799 8 11.2V17.8C8 18.9201 8 19.4802 8.21799 19.908C8.40973 20.2843 8.71569 20.5903 9.09202 20.782C9.51984 21 10.0799 21 11.2 21Z"
+                    stroke="white"
+                    stroke-width="1.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Copy API Key</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for cookies -->
+      <div
+        class="modal fade"
+        id="cookiesModal"
+        tabindex="-1"
+        aria-labelledby="cookiesModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header p-4 border-0 pb-0">
+              <h1 class="modal-title" id="cookiesModalLabel">
+                <div class="icon">
+                  <svg
+                    class="flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.0913 6.72222H20.0451C20.5172 6.72222 20.7533 6.72222 20.8914 6.82149C21.0118 6.9081 21.0903 7.04141 21.1075 7.18877C21.1272 7.35767 21.0125 7.56403 20.7832 7.97677L19.3624 10.5343C19.2792 10.684 19.2376 10.7589 19.2213 10.8381C19.2069 10.9083 19.2069 10.9806 19.2213 11.0508C19.2376 11.13 19.2792 11.2049 19.3624 11.3545L20.7832 13.9121C21.0125 14.3248 21.1272 14.5312 21.1075 14.7001C21.0903 14.8475 21.0118 14.9808 20.8914 15.0674C20.7533 15.1667 20.5172 15.1667 20.0451 15.1667H12.6135C12.0224 15.1667 11.7268 15.1667 11.501 15.0516C11.3024 14.9504 11.1409 14.7889 11.0397 14.5903C10.9247 14.3645 10.9247 14.0689 10.9247 13.4778V10.9444M7.23021 21.5L3.00799 4.61111M4.59137 10.9444H12.4024C12.9936 10.9444 13.2892 10.9444 13.515 10.8294C13.7136 10.7282 13.8751 10.5667 13.9763 10.3681C14.0913 10.1423 14.0913 9.84672 14.0913 9.25556V4.18889C14.0913 3.59772 14.0913 3.30214 13.9763 3.07634C13.8751 2.87773 13.7136 2.71625 13.515 2.61505C13.2892 2.5 12.9936 2.5 12.4024 2.5H4.64329C3.90596 2.5 3.53729 2.5 3.28514 2.65278C3.06414 2.78668 2.89993 2.99699 2.82363 3.24387C2.73657 3.52555 2.82599 3.88321 3.00483 4.59852L4.59137 10.9444Z"
+                      stroke="#181D27"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <img
+                  class="pattern"
+                  src="imgs/pattern.png"
+                  class="img-fluid"
+                  width="216"
+                  height="216"
+                  alt="pattern"
+                />
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-4">
+              <h3>Cookies preferences</h3>
+              <p>
+                We use third-party cookies in order to personalize your
+                experience
+              </p>
+            </div>
+            <div
+              class="modal-footer p-3 d-flex gap-2 flex-nowrap flex-column-reverse flex-md-row justify-content-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-secondary border d-block w-100 p-3 fw-semibold m-0"
+                data-bs-dismiss="modal"
+              >
+                Decline
+              </button>
+              <button
+                type="button"
+                class="btn btn-violet d-block w-100 p-3 fw-semibold m-0"
+              >
+                Accept
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
